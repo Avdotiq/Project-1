@@ -1,6 +1,4 @@
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
 
 main {
     background: #FDF7F0;
@@ -14,4 +12,27 @@ main {
 
 img {
     max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 2.96px;
+    color: #EDE5DC;
+}
+
+@media (min-width: 768px) {
+    h2 {
+        font-size: 74px;
+    }
+
 }

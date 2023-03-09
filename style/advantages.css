@@ -1,0 +1,50 @@
+.advantages {
+    position: relative;
+    background: #374F4C;
+}
+
+.advantages .fragment {
+    position: absolute;
+    top: -1vh;
+    width: 100%;
+}
+
+.advantages h2 {
+    padding: 82px 0 25px;
+}
+
+.advantages-notes {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.32px;
+    color: #FFFFFF;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card {
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.notes {
+    max-width: 360px;
+}
+
+@media (min-width: 768px) {
+    .card:nth-child(odd) {
+        flex-direction: row;
+        padding: 80px 89px 54px 30px;
+    }
+    
+    .card:nth-child(even) {
+        flex-direction: row-reverse;
+        padding: 80px 30px 54px 89px;
+    }
+}

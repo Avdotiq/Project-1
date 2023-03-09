@@ -1,0 +1,46 @@
+.promo {
+    padding-bottom: 38px;
+}
+
+.promo-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #374F4C;
+    padding: 40px 0 15px;
+}
+
+.partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+}
+
+
+/* если используем max-width то пишем брекпоинты снизу основного кода,
+тогда браузер правильно читает таблицу стилей и основные стили не перебивают брекпоинты*/
+
+/* все что больше 768 px */
+@media (min-width: 768px) {
+    .promo-wrapper {
+        flex-direction: row;
+    }
+    
+    h1 {
+        font-size: 46px;
+    }
+    
+    .partners {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
