@@ -1,0 +1,46 @@
+.steps {
+    padding: 80px 0 75px;
+    background: #cad4bd;
+
+    &__carts {
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        @media (min-width: 1024px) {
+            flex-direction: row;
+        }
+    }
+
+    &__cart {
+        color: #374f4c;
+    }
+
+    a {
+        margin-top: 20px;
+    }
+}
+
+.cart {
+    max-width: none;
+    @media (min-width: 1024px) {
+        max-width: 300px;
+    }
+
+    &__title {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    &__link {
+        display: block;
+        width: fit-content;
+        padding: 10px 20px;
+        margin-top: 5px;
+        border: 1px solid #f8f9fa;
+    }
+}
