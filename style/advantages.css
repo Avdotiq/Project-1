@@ -5,8 +5,10 @@
 
 .advantages .fragment {
     position: absolute;
-    top: -1vh;
+    top: -27px;
     width: 100%;
+    height: 28px;
+    object-fit: cover;
 }
 
 .advantages h2 {
@@ -42,7 +44,7 @@
         flex-direction: row;
         padding: 80px 89px 54px 30px;
     }
-    
+
     .card:nth-child(even) {
         flex-direction: row-reverse;
         padding: 80px 30px 54px 89px;
