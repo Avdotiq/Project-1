@@ -1,0 +1,12 @@
+.banner {
+    position: relative;
+
+    &__title {
+        position: absolute;
+        font-size: 1em;
+        line-height: 1;
+        text-align: center;
+        letter-spacing: 4.08px;
+        color: #ede5dc;
+    }
+}
