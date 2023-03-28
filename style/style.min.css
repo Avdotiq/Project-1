@@ -1,11 +1,19 @@
 .steps {
-  padding: 80px 0 75px;
+  position: relative;
   background: #cad4bd;
+}
+.steps .fragment {
+  position: absolute;
+  top: -15px;
+  width: 100%;
+  height: 48px;
+  object-fit: cover;
 }
 .steps__carts {
   display: flex;
   flex-direction: column;
   gap: 80px;
+  padding: 80px 0 75px;
 }
 @media (min-width: 768px) {
   .steps__carts {
@@ -23,10 +31,15 @@
 .cart__title {
   font-size: 26px;
   line-height: 1.2;
+  font-size: 26px;
+  letter-spacing: 1.08px;
+  color: #374f4c;
+  padding-bottom: 27px;
 }
 .cart__text {
   font-size: 14px;
   line-height: 1.4;
+  color: #3e3e42;
 }
 .cart__link {
   display: block;
@@ -34,12 +47,16 @@
   padding: 10px 20px;
   margin-top: 5px;
   border: 1px solid #f8f9fa;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3e3e42;
+  text-decoration: none;
 }
 
 .banner {
   position: relative;
   height: 80vh;
-  background-image: url("/image/BG-banner.jpg");
+  background-image: url("../image/BG-banner.jpg");
   background-size: cover;
   background-position: top center;
 }
@@ -59,6 +76,193 @@
 @media (min-width: 768px) {
   .banner__title {
     font-size: 102px;
+  }
+}
+
+.promo-banner {
+  display: none;
+  padding: 20px 0 10px;
+  background: #374f4c;
+}
+@media (min-width: 768px) {
+  .promo-banner {
+    display: block;
+  }
+}
+.promo-banner img {
+  display: block;
+  margin: auto;
+}
+
+.header {
+  padding: 25px 0;
+  background: #fdf7f0;
+}
+.header .nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav-header ul {
+  list-style: none;
+  display: none;
+}
+@media (min-width: 768px) {
+  .header .nav-header ul {
+    display: flex;
+  }
+}
+.header .nav-header li:not(:last-child) {
+  margin-right: 30px;
+}
+.header .nav-header a {
+  position: relative;
+  font-size: 15px;
+  line-height: 1.1;
+  letter-spacing: 0.32px;
+  text-decoration: none;
+  color: #3e3e42;
+}
+.header .nav-header a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 1px;
+  background-color: #3e3e42;
+  transition: all 0.5s;
+}
+.header .nav-header a:hover::after {
+  left: 0;
+  width: 100%;
+}
+.header .nav-header .mob-menu {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header .nav-header .mob-menu {
+    display: none;
+  }
+}
+.header .nav-header .mob-menu span {
+  height: 2px;
+  width: 24px;
+  background-color: black;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.promo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .promo-wrapper {
+    flex-direction: row;
+  }
+}
+.promo .content {
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  .promo .content {
+    max-width: 365px;
+  }
+}
+.promo .content p {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.32px;
+  color: #3e3e42;
+  padding-bottom: 27px;
+}
+.promo h1 {
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: #374f4c;
+  padding: 40px 0 15px;
+}
+@media (min-width: 768px) {
+  .promo h1 {
+    font-size: 46px;
+  }
+}
+.promo .partners {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+}
+@media (min-width: 768px) {
+  .promo .partners {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.promo .image {
+  margin: 30px 0 0;
+}
+@media (min-width: 768px) {
+  .promo .image {
+    margin: 0;
+  }
+}
+
+.advantages {
+  position: relative;
+  background: #374f4c;
+}
+.advantages .fragment {
+  position: absolute;
+  top: -27px;
+  width: 100%;
+  height: 28px;
+  object-fit: cover;
+}
+.advantages h2 {
+  padding: 82px 0 25px;
+}
+.advantages-notes {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+}
+.advantages .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.advantages .card .notes {
+  max-width: 360px;
+}
+.advantages .card .notes h4 {
+  font-size: 32px;
+  line-height: 1.23;
+  letter-spacing: 1.28px;
+  color: #ede5dc;
+}
+.advantages .card .notes p {
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.32px;
+  color: #ffffff;
+  padding-top: 27px;
+}
+@media (min-width: 768px) {
+  .advantages .card:nth-child(odd) {
+    flex-direction: row;
+    padding: 80px 89px 54px 30px;
+  }
+  .advantages .card:nth-child(even) {
+    flex-direction: row-reverse;
+    padding: 80px 30px 54px 89px;
   }
 }
 
