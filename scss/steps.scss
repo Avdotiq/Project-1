@@ -5,13 +5,14 @@
     &__carts {
         display: flex;
         flex-direction: column;
-        column-gap: 10px;
-        @media (min-width: 1024px) {
+        gap: 80px;
+        @media (min-width: 768px) {
             flex-direction: row;
         }
     }
 
     &__cart {
+        flex: 0 1 auto;
         color: #374f4c;
     }
 
@@ -21,11 +22,6 @@
 }
 
 .cart {
-    max-width: none;
-    @media (min-width: 1024px) {
-        max-width: 300px;
-    }
-
     &__title {
         font-size: 26px;
         line-height: 1.2;
